@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            
+        }
+        .logo{
+            margin: 60px;
+        }
+        .logo img{
+            width: 150px;
+            height: 200px;
+            mix-blend-mode: darken;
+        }
+        .logo img:hover{
+            transform: rotate(360deg);
+            transition: all 1s ease-in;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            height: 170px;
+        }
+        .nav-top{
+            width: 40%;
+            margin: 25px;
+        }
+        #selector{
+            border: none;
+            font-size: 25px;
+            margin: 25px;
+        }
+        .nav-top a{
+            font-size: 25px;
+            text-decoration: none;
+           margin: 25px;
+        }
+        .nav-top-right{
+            justify-content: space-around;
+            margin-top: 25px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 37%;
+            height: 70px;
+        }
+        .nav-top-right img{
+width: 50px;   
+height: 60px;         
+        }
+        .nav-top-right p{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .nav-top-right-search{
+            display: flex;
+
+        }
+        .nav-top-right-location{
+            display: flex;
+        }
+        .nav-top-right button{
+            font-size: 20px;
+            box-shadow: 9px 9px rgba(0, 0, 0, 0.282);
+            width: 180px;
+            background-color: #ffbc0d;
+            border-radius: 10px;
+            border: 1px solid #ffbc0d;
+        }
+
+        .nav-top-right button:hover{
+  transform:  rotate(360deg);
+  transition: all ease-in 3s ;
+
+
+        }
+
+        #menu-card{
+            width: 150px;
+            font-size: 27px;
+            border: none;
+        }
+        .nav-bottom{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;
+            font-size: 25px;
+
+        }
+        .nav-bottom a{
+            font-size: 30px;
+            margin: 25px;
+            text-decoration: none;
+
+        }
+        .bottom-line{
+            border: 2px solid;
+            box-shadow: 10px 10px gainsboro;
+        }
+        .state-option{
+            padding: 110px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .state-head h1{
+            font-size: 45px;
+        }
+        .state-search-icon img{
+            width: 30px;
+            margin-top: 10px;
+            margin-left: 9px;
+            mix-blend-mode: darken;
+
+        }
+        .state-search-icon{
+            background-color: #ffbc0d;
+            width: 60px;
+            height: 60px;
+            border: 1px solid #ffbc0d;
+        }
+        .locate-button img{
+            width: 20px;
+            mix-blend-mode: darken;
+        }
+        .locate-button button{
+            width: 190px;
+            border: 1px solid;
+            height: 60px;
+            background-color: white;
+        }
+        .state-line{
+            margin-top: -70px;
+            margin-left: 490px;
+            border: 1px solid;
+            width: 950px;
+        }
+        .map{
+            display: flex;
+            margin-top: 40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .footer{
+    font-size: 25px;
+    line-height: 1.7;
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+}
+.footer ul li{
+    list-style: none;
+
+}
+.icons ul{
+height: 60px;
+    display: flex;
+    list-style: none;
+    }
+.icons {
+
+    /* width: 100%; */
+
+}
+.line{
+    margin-top: 10px;
+    border: 2px solid;
+}
+.condition ul{
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+font-size: 30px;
+}
+
+
+/* Media Query */
+@media(min-width:780px){
+    .logo{
+            margin: 60px;
+        }
+        .logo img{
+            width: 150px;
+            height: 200px;
+            mix-blend-mode: darken;
+        }
+        .logo img:hover{
+            transform: rotate(360deg);
+            transition: all 1s ease-in;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            height: 170px;
+        }
+        .nav-top{
+            width: 39%;
+            margin: 25px;
+        }
+        #selector{
+            width: 130px;
+            border: none;
+            font-size: 25px;
+            margin: 25px;
+        }
+        .nav-top a{
+            width: 50px;
+            font-size: 25px;
+            text-decoration: none;
+            margin: 25px;
+        }
+        .nav-top-right{
+            justify-content: space-around;
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 29%;
+            height: 70px;
+        }
+        .nav-top-right img{
+width: 50px;   
+height: 60px;         
+        }
+        .nav-top-right p{
+            font-size: 25px;
+            margin-top: 10px;
+        }
+        .nav-top-right-search{
+            display: flex;
+
+        }
+        .nav-top-right-location{
+            display: flex;
+            /* font-size: 9px; */
+        }
+        .nav-top-right button{
+            font-size: 20px;
+            box-shadow: 9px 9px rgba(0, 0, 0, 0.282);
+            width: 120px;
+            margin-left: 22px;
+            background-color: #ffbc0d;
+            border-radius: 10px;
+            border: 1px solid #ffbc0d;
+        }
+
+        .nav-top-right button:hover{
+  transform:  rotate(360deg);
+  transition: all ease-in 3s ;
+
+
+        }
+
+        #menu-card{
+            width: 150px;
+            font-size: 27px;
+            border: none;
+        }
+        .nav-bottom{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 300px;
+            font-size: 25px;
+
+        }
+        .nav-bottom a{
+            font-size: 30px;
+            margin: 25px;
+            text-decoration: none;
+
+        }
+        .bottom-line{
+            width: 1450px;
+            border: 2px solid;
+            box-shadow: 10px 10px gainsboro;
+        }
+        .state-line{
+            width: 700px;
+            margin-left: 150px;
+        }
+
+
+        .footer{
+    font-size: 25px;
+    line-height: 1.7;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: end;
+}
+.footer ul li{
+    list-style: none;
+
+}
+.icons ul{
+    width: 350px;
+height: 60px;
+    display: flex;
+}
+.line{
+    width: 1450px;
+    margin-top: 10px;
+    border: 2px solid;
+}
+.condition ul{
+    width: 90%;
+
+display: flex;
+justify-content: space-evenly;
+list-style: none;
+font-size: 30px;
+}
+
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-direction: column; */
+}
+.bottom3{
+    margin-top: 50px;
+    display: flex;
+    font-size: 30px;
+}
+
+    }
+
+
+        /* media query 769px */
+        @media(max-width: 769px){
+            .logo{
+                margin-top: 5px;
+                margin-left: 820px;
+            width: 1000px;
+                
+            }
+            .container{
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: center;
+                align-items: center;
+                width: 100px;
+
+            }
+            #menu-card{
+                display: none;
+
+            }
+            #selector{
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-around;
+            /* margin-left: 35px; */
+        }
+
+            .nav-top-right{
+                display: none;
+                margin-left: -150px;
+                font-size: 15px;
+                width: 270px;
+                flex-direction: column;
+                font-size: 12px;
+                flex-wrap: nowrap;
+            }
+            .nav-top-right button{
+                width: 90px;
+                font-size: 13px ;
+            }
+            .nav-bottom{
+                width: 435px;
+                height: 900px;
+            }
+            .nav-bottom a{
+                font-size: 40px;
+
+            }
+            .nav-top{
+/* margin: 20px;   */
+              display: none;
+              /* margin-left: -250px; */          
+              }
+              .bottom-line{
+                width: 1000px;
+              }
+              .state-head h1{
+                width: 400px;
+
+              }
+              .state-line{
+                width: 700px;
+                margin-left: 63px;
+              }
+.map {
+    width: 1000px;
+}
+
+
+
+              .footer{
+                width: 950px;
+                display: flex;
+                font-size: 50px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            .icons ul{
+                display: flex;
+                /* flex-direction: column; */
+                justify-content: center;
+                /* align-items: center; */
+
+            }
+            .line{
+                margin-top: 150px;
+                width: 1000px;
+            }
+            .condition ul{
+                width: 1000px;
+                font-size: 39px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .icons{
+                width: 100%;
+                height: 90px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .icons img{
+                width: 120px;
+                padding: 10px;
+
+            }
+            .line{
+                margin-bottom: 40px;
+            }
+            .app{
+
+            }
+            .app img{
+                margin-top: 65px;
+                width: 390px;
+
+            }
+
+
+
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg" alt="">
+
+        </div>
+        <div class="nav-top">
+            <select name="langauge" id="selector">
+                <option value="lang">Language</option>
+                <option value="lang">English</option>
+                <option value="lang">Hindi</option>
+                <option value="lang">Some Other </option>
+
+            </select>
+            <a href="#">Sign Up For Email</a>
+            <a href="#">Careers</a>
+        </div>
+        <div class="nav-top-right">
+            <div class="nav-top-right-search">
+            <img src="data:image/png;base64,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" alt="">
+            <p>Search</p>
+
+            </div>
+            <div class="nav-top-right-location">
+            <img src="data:image/png;base64,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" alt="">
+            <p><a href="">Change location in Email</a></p>
+
+            </div>
+            <button>Order Now</button>
+        </div>
+    </div>
+    <div class="nav-bottom">
+        <select name="menu" id="menu-card">
+            <option value="menu">Our Menu</option>
+            <option value="menu">Veg</option>
+            <option value="menu">Non-Veg</option>
+
+
+        </select>
+        <a href="download.html">Download App</a>
+        <a href="reward.html">My Mcdonald's Review </a>
+        <a href="deal.html">Exclusive Deals</a>      
+        <a href="about.html">About Our Food</a>
+        <a href="locate.html">Locate</a>
+          <a href="gift.html">Gift Card</a>
+
+    </div>    
+    <div class="bottom-line"></div>
+    <div class="state-option">
+        
+        <div class="state-head">
+            <h1>Zip or City & State</h1>
+
+        </div>
+        <div class="state-search-icon">
+            <img src="data:image/png;base64,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" alt="">
+
+        </div>
+        <div class="locate-button">
+            <button><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4kxERXX951ICLHUOr12lwjXA0wd41b18h2w&s" alt=""> Locate me</button>
+        </div>
+
+    </div>
+    <div class="state-line">
+
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15283540.85736922!2d72.11990233528792!3d20.737284074490884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1712495819708!5m2!1sen!2sin" width="80%" height="750" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="footer">
+        <div class="box">
+            <h2>About us</h2>
+            <ul>
+                <li>About Us Overview</li>
+                <li>Leadership Team</li>
+                <li>Value in Action</li>
+                <li>Franchise Info</li>
+                <li>Recalls & Alerts</li>
+                <li>Real Estate</li>
+                <li>Accessibility</li>
+                <li>Investor Relations</li>
+                <li>News & Notifications</li>
+            </ul>
+        </div>
+        <div class="box2">
+            <h2>Services</h2>
+            <ul>
+                <li>About Us Overview</li>
+                <li>Leadership Team</li>
+                <li>Value in Action</li>
+                <li>Franchise Info</li>
+                <li>Recalls & Alerts</li>
+                <li>Real Estate</li>
+                <li>Accessibility</li>
+                <li>Investor Relations</li>
+                <li>News & Notifications</li>
+            </ul>
+    
+        </div>
+    
+        <div class="box3">
+            <h2>Community</h2>
+            <ul>
+                <li>About Us Overview</li>
+                <li>Leadership Team</li>
+                <li>Value in Action</li>
+                <li>Franchise Info</li>
+                <li>Recalls & Alerts</li>
+                <li>Real Estate</li>
+                <li>Accessibility</li>
+                <li>Investor Relations</li>
+                <li>News & Notifications</li>
+            </ul>
+    
+        </div>
+        <div class="box4">
+            <h2>Contact Us</h2>
+            <ul>
+                <li>About Us Overview</li>
+                <li>Leadership Team</li>
+                <li>Value in Action</li>
+                <li>Franchise Info</li>
+                <li>Recalls & Alerts</li>
+                <li>Real Estate</li>
+                <li>Accessibility</li>
+                <li>Investor Relations</li>
+                <li>News & Notifications</li>
+            </ul>
+    
+        </div>
+    </div>
+
+        <div class="icons">
+            <ul>
+    <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/facebook.png" alt="fb"></li>
+    <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/x.png" alt="instra"></li>
+    <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/youtube.png" alt="spotify"></li>
+    <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/instagram.png" alt="twitter"></li>
+    <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/tumblr.png" alt="youtube"></li>
+    <!-- <li id="apple"><img src="image/apple.png" alt=""></li>
+    <li id="app"><img src="image/google.png" alt=""></li> -->
+            </ul>
+        <div class="app">
+    
+            <img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/app_store_badge.png" alt="">
+            <img id="google" src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/logo/app_store_badge.png" alt="">
+        </div>
+        </div>
+    
+    
+    <div class="line">
+    
+    </div>
+    <div class="condition">
+        <ul>
+            <li>Privacy(Updated)</li>
+            <li>California Privacy Notice</li>
+            <li>Term & Conditions</li>
+            <li>Accessibility</li>
+    
+            <ul class="bottom2">
+                <li><img src="https://www.mcdonalds.com/content/dam/sites/usa/nfl/icons/arches-logo_108x108.jpg" alt="mc donlad logo"></li>
+                <li>&#169 2017-2024 McDonald’s.All Rights <br> &nbsp;  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Reserved</li>
+            </ul>
+    
+        </ul>
+        <div class="bottom3">
+            <ul>
+                <li>Do Not Sell or Share My Personal Information</li>
+                <li>Cookies Settings</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
